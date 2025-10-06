@@ -1,9 +1,9 @@
-layout: {zmk_keyboard: sofle}
+layout: {qmk_keyboard: sofle/rev1}
 layers:
   default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
+    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LCTRL, LALT, LEFT META, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   lower:
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -53,7 +53,7 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - '&studio_unlock'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -185,3 +185,6 @@ layers:
   - ''
   - ''
   - ''
+combos:
+- p: [53, 11, 10, 9]
+  k: '&studio_unlock'
